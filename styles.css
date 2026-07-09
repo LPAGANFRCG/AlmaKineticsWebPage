@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap');
 
 :root {
     --bg-dark: #121721;
@@ -17,11 +17,16 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-main);
     overflow-x: hidden;
     line-height: 1.6;
+}
+
+h1, h2, h3, .logo-text, .hero-tagline, .cta-btn, .nav-links a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 /* Background effects */
@@ -82,10 +87,9 @@ nav.scrolled {
 }
 
 .logo-text {
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .logo-text span {
@@ -154,8 +158,8 @@ nav.scrolled {
 }
 
 .hero h1 {
-    font-size: 4.5rem;
-    font-weight: 800;
+    font-size: 5rem;
+    font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     opacity: 0;
