@@ -48,3 +48,104 @@ document.querySelectorAll('.service-card').forEach(card => {
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
 });
+
+// --- Dynamic Counters ---
+const statNumbers = document.querySelectorAll('.stat-number');
+const statsObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const target = +entry.target.getAttribute('data-target');
+            const duration = 2000;
+            const increment = target / (duration / 16); // 60fps
+            
+            let current = 0;
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    entry.target.innerText = Math.ceil(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    entry.target.innerText = target;
+                }
+            };
+            updateCounter();
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+statNumbers.forEach(stat => statsObserver.observe(stat));
+
+// --- Contact Form Simulation ---
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = contactForm.querySelector('button');
+        const originalText = btn.innerText;
+        btn.innerText = 'Sending...';
+        btn.disabled = true;
+
+        // Simulate API call
+        setTimeout(() => {
+            btn.innerText = originalText;
+            btn.disabled = false;
+            contactForm.reset();
+            formStatus.innerText = 'Message sent successfully! We will contact you soon.';
+            formStatus.style.color = 'var(--accent)';
+            setTimeout(() => { formStatus.innerText = ''; }, 5000);
+        }, 1500);
+    });
+}
+
+// --- Chatbot Widget Logic ---
+const chatToggle = document.getElementById('chat-toggle');
+const chatWindow = document.getElementById('chat-window');
+const closeChat = document.getElementById('close-chat');
+const sendChatBtn = document.getElementById('send-chat');
+const chatInput = document.getElementById('chat-input');
+const chatBody = document.getElementById('chat-body');
+
+if (chatToggle) {
+    chatToggle.addEventListener('click', () => {
+        chatWindow.classList.add('open');
+    });
+
+    closeChat.addEventListener('click', () => {
+        chatWindow.classList.remove('open');
+    });
+
+    const addMessage = (text, type) => {
+        const msgDiv = document.createElement('div');
+        msgDiv.classList.add('chat-msg', type);
+        msgDiv.innerText = text;
+        chatBody.appendChild(msgDiv);
+        chatBody.scrollTop = chatBody.scrollHeight;
+    };
+
+    const handleChat = () => {
+        const text = chatInput.value.trim();
+        if (text) {
+            addMessage(text, 'user');
+            chatInput.value = '';
+            
+            // Simulate bot response
+            setTimeout(() => {
+                const responses = [
+                    "That's a great question! One of our engineers will reach out to discuss this further.",
+                    "We specialize in converting manual processes into AI-driven systems in minutes.",
+                    "Would you like to schedule a quick 15-minute demo call with our team?"
+                ];
+                const reply = responses[Math.floor(Math.random() * responses.length)];
+                addMessage(reply, 'bot');
+            }, 1000);
+        }
+    };
+
+    sendChatBtn.addEventListener('click', handleChat);
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleChat();
+    });
+}

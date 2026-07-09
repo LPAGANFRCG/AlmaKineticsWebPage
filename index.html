@@ -37,6 +37,22 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <h2 class="stat-number" data-target="99">0</h2><span>%</span>
+            <p>Uptime Reliability</p>
+        </div>
+        <div class="stat-item">
+            <h2 class="stat-number" data-target="150">0</h2><span>+</span>
+            <p>Processes Automated</p>
+        </div>
+        <div class="stat-item">
+            <h2 class="stat-number" data-target="10000">0</h2><span>+</span>
+            <p>Hours Saved</p>
+        </div>
+    </section>
+
     <section id="solutions" class="services">
         <h2 class="section-title">Our Solutions</h2>
         <div class="services-grid">
@@ -79,9 +95,41 @@
         </div>
     </section>
 
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <form id="contact-form" class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="company" placeholder="Company Name">
+            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+            <button type="submit" class="cta-btn" style="width: 100%;">Send Message</button>
+            <div id="form-status" class="form-status"></div>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2026 Alma Kinetics. All rights reserved.</p>
     </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <div class="chat-toggle" id="chat-toggle">
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h3>Alma AI Support</h3>
+                <button id="close-chat"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="chat-msg bot">Hi! I'm the Alma AI Assistant. How can I help you today?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-chat"><ion-icon name="send-outline"></ion-icon></button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
