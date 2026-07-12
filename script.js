@@ -149,3 +149,57 @@ if (chatToggle) {
         if (e.key === 'Enter') handleChat();
     });
 }
+
+// =========================================
+// BROWSE SECTION: Filter Tabs
+// =========================================
+const browseTabs = document.querySelectorAll('.browse-tab');
+const capabilityCards = document.querySelectorAll('.capability-card');
+
+browseTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Update active tab
+        browseTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const filter = tab.getAttribute('data-filter');
+
+        capabilityCards.forEach((card, i) => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+                card.classList.remove('hidden');
+                // Re-trigger reveal animation with stagger
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, i * 60);
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    });
+});
+
+// =========================================
+// BROWSE SECTION: Stagger Reveal on Scroll
+// =========================================
+const capRevealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const allCards = [...document.querySelectorAll('.capability-card:not(.hidden)')];
+            const idx = allCards.indexOf(entry.target);
+            setTimeout(() => {
+                entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }, idx * 80);
+            capRevealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+capabilityCards.forEach(card => capRevealObserver.observe(card));
+
