@@ -1499,3 +1499,61 @@ footer {
         }
     }
 #intelligence .bg-glow { position: absolute; }
+
+/* Brand Switcher */
+.brand-switcher {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #04060A;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.brand-tab {
+    flex: 1;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.brand-tab:hover {
+    background: rgba(255,255,255,0.02);
+    color: #fff;
+}
+
+.brand-tab.active-brand {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    background: rgba(108, 217, 35, 0.05);
+}
+
+.brand-tab.ai-brand:hover {
+    color: #00E1FF;
+}
+
+/* Push navbar down */
+#navbar {
+    top: 40px !important;
+}
+
+/* Push matchmaker container down if it's fixed */
+.matchmaker-container.open {
+    top: 40px !important;
+    height: calc(100vh - 40px) !important;
+}
+
