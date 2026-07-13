@@ -99,6 +99,48 @@
 
     <!-- Browse Our Solutions Section -->
     <section id="browse" class="browse-section">
+        <!-- Robot Matchmaker -->
+        <div class="matchmaker-container">
+            <div class="matchmaker-header">NOT SURE WHERE TO START?</div>
+            <div class="matchmaker-body">
+                I run a 
+                <select id="mm-industry" class="mm-select">
+                    <option value="any">Business</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="hospital">Hospital</option>
+                    <option value="warehouse">Warehouse</option>
+                    <option value="office">Corporate Office</option>
+                    <option value="factory">Factory</option>
+                    <option value="retail">Retail</option>
+                </select> 
+                in 
+                <select id="mm-location" class="mm-select">
+                    <option value="usa">United States</option>
+                    <option value="pr" selected>Puerto Rico</option>
+                    <option value="canada">Canada</option>
+                    <option value="latam">Latin America</option>
+                    <option value="europe">Europe</option>
+                </select> 
+                and I want to 
+                <select id="mm-goal" class="mm-select">
+                    <option value="any">Automate my operations</option>
+                    <option value="clean">Automate floor cleaning</option>
+                    <option value="heavy">Transport heavy payloads</option>
+                    <option value="delivery">Deliver food & items</option>
+                    <option value="ads">Interactive customer service & ads</option>
+                    <option value="humanoid">Research & Development</option>
+                </select>.
+            </div>
+            <div class="matchmaker-footer">
+                <div class="mm-results">
+                    <span id="mm-count" style="font-weight: 700; font-size: 1.2rem; color: #fff;">16</span> robot matches <span class="mm-divider">·</span> <span class="mm-payback">Typical payback: &lt; 6 months</span>
+                    <p class="mm-suggestion" id="mm-suggestion">Explore our entire catalog below.</p>
+                </div>
+                <button class="cta-btn small" id="mm-see-matches" style="border-radius: 8px;">See matches &rarr;</button>
+            </div>
+        </div>
+
         <div class="browse-header">
             <span class="browse-eyebrow">Explore What We Do</span>
             <h2 class="section-title">Browse Our Solutions</h2>

@@ -285,3 +285,74 @@ specsModal.addEventListener('click', (e) => {
         specsModal.classList.remove('open');
     }
 });
+
+// =========================================
+// ROBOT MATCHMAKER LOGIC
+// =========================================
+const mmGoal = document.getElementById('mm-goal');
+const mmCount = document.getElementById('mm-count');
+const mmSuggestion = document.getElementById('mm-suggestion');
+const mmSeeMatches = document.getElementById('mm-see-matches');
+
+// Categorize by goals based on robot titles
+const botGoals = {
+    'clean': ['CC1', 'CC1 Pro', 'MT1', 'MT1 Vac', 'MT1 Max', 'BG1 Series'],
+    'heavy': ['Pudu T150', 'Pudu T300', 'Pudu T600'],
+    'delivery': ['BellaBot', 'BellaBot Pro', 'KettyBot Pro', 'PuduBot 2', 'FlashBot'],
+    'ads': ['BellaBot Pro', 'KettyBot Pro'],
+    'humanoid': ['FlashBot Arm', 'D7', 'D9']
+};
+
+function updateMatchmaker() {
+    const goal = mmGoal.value;
+    let matchCount = 16;
+    let suggestion = "Explore our entire catalog below.";
+
+    if (goal !== 'any' && botGoals[goal]) {
+        matchCount = botGoals[goal].length;
+        if (goal === 'clean') suggestion = "Automated sweepers and scrubbers. Perfect for consistent maintenance.";
+        if (goal === 'heavy') suggestion = "Industrial-grade transport robots. Save labor and prevent injuries.";
+        if (goal === 'delivery') suggestion = "Smart delivery robots. Enhance guest experience and efficiency.";
+        if (goal === 'ads') suggestion = "Robots with integrated HD displays for targeted advertising.";
+        if (goal === 'humanoid') suggestion = "Advanced bionic robots pushing the boundaries of R&D.";
+    }
+
+    mmCount.innerText = matchCount;
+    mmSuggestion.innerText = suggestion;
+}
+
+// Add event listeners to all selects
+document.querySelectorAll('.mm-select').forEach(select => {
+    select.addEventListener('change', updateMatchmaker);
+});
+
+mmSeeMatches.addEventListener('click', () => {
+    const goal = mmGoal.value;
+    
+    // First, make sure we are on the "Products" tab
+    const productsTab = document.querySelector('.browse-tab[data-filter="products"]');
+    if (productsTab) {
+        productsTab.click();
+    }
+    
+    // Then filter the cards
+    const allCards = document.querySelectorAll('.capability-card[data-category="products"]');
+    allCards.forEach(card => {
+        const title = card.querySelector('h3').innerText;
+        if (goal === 'any') {
+            card.style.display = 'flex';
+        } else {
+            if (botGoals[goal] && botGoals[goal].some(b => title.includes(b))) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        }
+    });
+
+    // Scroll to grid
+    document.getElementById('capability-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+// Init
+updateMatchmaker();
