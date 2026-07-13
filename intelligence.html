@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alma Kinetics | Automated Solutions</title>
-    <meta name="description" content="Alma Kinetics specializes in Custom AI Integration, Robotics, and Process Automation for forward-thinking businesses.">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%236cd923'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' fill='black' font-family='Arial, sans-serif' font-size='65' font-weight='900'>A</text></svg>">
+    <title>Alma Intelligence | AI & Data Engineering</title>
+    <meta name="description" content="Alma Intelligence provides AI Engineering, Data Lakehouses, and Intelligent Document Processing.">
+    <link rel="icon" type="image/png" href="assets/logo_ai.png">
     <link rel="stylesheet" href="styles.css">
-    <!-- Ionicons for some beautiful icons -->
+    <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-        <!-- Brand Switcher Tabs -->
+<body style="background-color: #070A13; color: #E2E8F0; font-family: 'Inter', sans-serif;">
+
+    <!-- Brand Switcher Tabs -->
     <div class="brand-switcher">
         <a href="index.html" class="brand-tab">
             <ion-icon name="hardware-chip-outline"></ion-icon> Alma Kinetics
@@ -22,16 +23,25 @@
         </a>
     </div>
 
-    <div class="bg-glow"></div>
-    <div class="bg-glow right"></div>
+    <div id="intelligence" style="min-height: 100vh; overflow: hidden; position: relative;">
 
-    <!-- ALMA INTELLIGENCE TEMPORARY MERGE V2 -->
-    <div id="intelligence" style="min-height: 100vh; position: relative; overflow: hidden; background-color: #070A13; color: #E2E8F0; padding-bottom: 50px; font-family: 'Inter', sans-serif;">
-<!-- Abstract Tech Background -->
+    <!-- Abstract Tech Background -->
     <div class="bg-glow"></div>
     <div class="bg-glow blue"></div>
 
-    
+    <nav id="navbar">
+        <div class="logo-container">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: #fff;">
+                <img src="assets/logo_ai.png" alt="Alma Intelligence Logo" class="logo-img">
+                <span class="logo-text">ALMA <span class="highlight-blue">INTELLIGENCE</span></span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#contact" class="cta-btn small">Consultation</a></li>
+        </ul>
+    </nav>
 
     <!-- HERO SECTION -->
     <header class="hero">
@@ -116,54 +126,26 @@
         </div>
     </section>
 
-    
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Alma Kinetics. All rights reserved.</p>
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>ALMA <span class="highlight-blue">INTELLIGENCE</span></h3>
+                <p>Empowering businesses through advanced AI and Data Engineering.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <p><ion-icon name="location-outline"></ion-icon> San Juan, Puerto Rico</p>
+                <p><ion-icon name="mail-outline"></ion-icon> hello@almasolutions.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alma Group - Intelligence Division. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- Robot Specs Modal -->
-    <div class="modal-overlay" id="specs-modal">
-        <div class="modal-content">
-            <button class="modal-close" id="close-modal"><ion-icon name="close-outline"></ion-icon></button>
-            <div class="modal-body">
-                <div class="modal-img-container">
-                    <img src="" id="modal-img" alt="Robot">
-                </div>
-                <div class="modal-info">
-                    <span class="modal-tag">Specifications</span>
-                    <h3 id="modal-title">Robot Title</h3>
-                    <p id="modal-desc" class="modal-desc-text">Robot Description</p>
-                    <div class="modal-specs" id="modal-specs">
-                        <!-- Specs injected by JS -->
-                    </div>
-                    <a href="javascript:void(0)" class="cta-btn small modal-cta" id="modal-cta-btn">Request a Quote</a>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <!-- Chatbot Widget -->
-    <div class="chat-widget">
-        <div class="chat-toggle" id="chat-toggle">
-            <ion-icon name="chatbubbles-outline"></ion-icon>
-        </div>
-        <div class="chat-window" id="chat-window">
-            <div class="chat-header">
-                <h3>Alma AI Support</h3>
-                <button id="close-chat"><ion-icon name="close-outline"></ion-icon></button>
-            </div>
-            <div class="chat-body" id="chat-body">
-                <div class="chat-msg bot">Hi! I'm the Alma AI Assistant. How can I help you today?</div>
-            </div>
-            <div class="chat-input-area">
-                <input type="text" id="chat-input" placeholder="Type a message...">
-                <button id="send-chat"><ion-icon name="send-outline"></ion-icon></button>
-            </div>
-        </div>
-    </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
