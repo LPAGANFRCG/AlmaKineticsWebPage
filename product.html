@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Details | Alma Kinetics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+    <div class="bg-glow"></div>
+    <div class="bg-glow right"></div>
+
+    <nav id="navbar" class="scrolled">
+        <div class="logo-container">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                <img src="assets/logo.jpeg" alt="Alma Kinetics Logo" class="logo-img">
+                <span class="logo-text">ALMA <span class="highlight">KINETICS</span></span>
+            </a>
+        </div>
+        <a href="index.html" class="nav-btn"><ion-icon name="arrow-back-outline"></ion-icon> Back to Home</a>
+    </nav>
+
+    <!-- LOADING STATE -->
+    <div id="loading" style="height: 100vh; display: flex; align-items: center; justify-content: center; color: white;">
+        <h2>Loading Robot Data...</h2>
+    </div>
+
+    <!-- MAIN PRODUCT CONTENT -->
+    <div id="product-content" style="display: none;">
+        <!-- Hero Section -->
+        <section class="prod-hero">
+            <div class="prod-hero-text">
+                <h1 id="prod-name">Robot Name</h1>
+                <h3 id="prod-subtitle" class="prod-subtitle">Subtitle</h3>
+                <p id="prod-hero-desc">Hero description goes here.</p>
+                <a href="#contact" class="cta-btn">Get a Quote</a>
+            </div>
+            <div class="prod-hero-img-container">
+                <img id="prod-hero-img" src="" alt="Robot Image">
+            </div>
+        </section>
+
+        <!-- Alma Kinetics Value Section -->
+        <section class="prod-alma-value">
+            <div class="alma-value-box">
+                <h2>The <span class="highlight">Alma Kinetics</span> Advantage</h2>
+                <p id="prod-alma-value-text">Alma Kinetics value description goes here.</p>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="prod-features-sec">
+            <h2>Key Features</h2>
+            <div class="prod-features-grid" id="prod-features-grid">
+                <!-- Features injected by JS -->
+            </div>
+        </section>
+
+        <!-- Technical Specs -->
+        <section class="prod-specs-sec">
+            <h2>Technical Specifications</h2>
+            <div class="prod-specs-container">
+                <table class="specs-table" id="specs-table">
+                    <!-- Specs injected by JS -->
+                </table>
+            </div>
+        </section>
+        
+        <!-- Contact CTA -->
+        <section id="contact" class="prod-contact">
+            <h2>Ready to Automate?</h2>
+            <p>Contact us today to see how this robot can transform your business operations.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <button type="submit" class="cta-btn">Request Demo</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Alma Kinetics. All rights reserved.</p>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>

@@ -264,6 +264,13 @@ document.querySelectorAll('.capability-card[data-category="products"]').forEach(
             });
         }
 
+        
+        // Update deep dive button link
+        const btn = document.getElementById('modal-cta-btn');
+        const formattedId = title.toLowerCase().replace(/ /g, '-').replace('pudu-', ''); // e.g. "BellaBot Pro" -> "bellabot-pro", "PUDU CC1" -> "cc1"
+        btn.innerText = "View Deep Dive";
+        btn.href = `product.html?bot=${formattedId}`;
+        
         specsModal.classList.add('open');
     });
 });

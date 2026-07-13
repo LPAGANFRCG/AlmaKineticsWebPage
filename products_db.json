@@ -1,0 +1,82 @@
+{
+  "BellaBot Pro": {
+    "id": "bellabot-pro",
+    "name": "BellaBot Pro",
+    "subtitle": "Premium Delivery & Advertising Robot",
+    "hero_image": "assets/images/nav_product_bella_pro_816bfa936e.png",
+    "hero_description": "The next generation of intelligent delivery, combining exceptional multimodal interaction with targeted, high-impact advertising capabilities. Elevate your customer experience while driving additional revenue.",
+    "alma_value": "At Alma Kinetics, we integrate BellaBot Pro seamlessly into your existing operations. We configure the AI navigation to match your floor plan, set up automated advertising schedules, and connect it to your POS or Kitchen Display Systems for true automation.",
+    "features": [
+      {
+        "icon": "eye-outline",
+        "title": "Upgraded VSLAM+",
+        "desc": "Next-level Visual SLAM technology for precise mapping in complex, high-traffic dynamic environments."
+      },
+      {
+        "icon": "mic-outline",
+        "title": "AI Voice Interaction",
+        "desc": "Natural language processing allows guests to interact intuitively, asking questions or receiving greetings."
+      },
+      {
+        "icon": "play-circle-outline",
+        "title": "Customized Advertisement",
+        "desc": "An integrated 18.5\" HD display serves dynamic ads based on location and time of day."
+      },
+      {
+        "icon": "speedometer-outline",
+        "title": "Superior Mobility",
+        "desc": "Independent suspension system ensures zero spillage even over uneven surfaces."
+      }
+    ],
+    "specs": {
+      "Machine Dimensions": "536 x 528 x 1290 mm",
+      "Machine Weight": "57 kg",
+      "Payload Capacity": "40 kg (10 kg per tray)",
+      "Battery Life": "Up to 24 hours",
+      "Charging Time": "4.5 hours",
+      "Cruise Speed": "0.1 - 1.2 m/s",
+      "Screen": "18.5\" 1080p Touchscreen",
+      "Clearance": "Min 70 cm path"
+    }
+  },
+  "CC1": {
+    "id": "cc1",
+    "name": "PUDU CC1",
+    "subtitle": "Intelligent Commercial Cleaning Robot",
+    "hero_image": "assets/images/nav_product_cc1_8baf7f1424.png",
+    "hero_description": "An autonomous 4-in-1 cleaning powerhouse that sweeps, scrubs, vacuums, and dust-mops. Designed for all hard floors, ensuring your facilities remain spotless 24/7 without manual intervention.",
+    "alma_value": "Alma Kinetics customizes the CC1 deployment to guarantee ROI. We map your facility for optimal cleaning routes, schedule automated nightly cleaning tasks, and integrate IoT sensors to deploy the CC1 automatically when spills occur.",
+    "features": [
+      {
+        "icon": "water-outline",
+        "title": "4-in-1 Versatile Cleaning",
+        "desc": "Sweep, scrub, vacuum, and dust-mop in a single pass for unparalleled efficiency."
+      },
+      {
+        "icon": "battery-charging-outline",
+        "title": "Auto Power & Water Refill",
+        "desc": "Automatically returns to its workstation to recharge and swap dirty water for clean water."
+      },
+      {
+        "icon": "wifi-outline",
+        "title": "IoT Capabilities",
+        "desc": "Integrates with elevators, automatic doors, and building management systems."
+      },
+      {
+        "icon": "scan-outline",
+        "title": "Dynamic Space Perception",
+        "desc": "Advanced 3D sensors detect obstacles and humans, instantly calculating bypass routes."
+      }
+    ],
+    "specs": {
+      "Machine Dimensions": "663 x 696 x 750 mm",
+      "Cleaning Width": "50 cm",
+      "Water Tank": "15L Clean / 15L Waste",
+      "Cleaning Efficiency": "1,000 - 1,200 m²/h",
+      "Battery Capacity": "60 Ah",
+      "Run Time": "Up to 8 hours (scrubbing)",
+      "Charging Time": "3-4 hours",
+      "Noise Level": "< 70 dB(A)"
+    }
+  }
+}
