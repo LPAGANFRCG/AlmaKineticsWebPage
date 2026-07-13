@@ -1014,11 +1014,13 @@ footer {
 }
 
 .robot-feature-tag {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
+    font-size: 0.58rem;
+    padding: 0.15rem 0.4rem;
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 4px;
     color: rgba(255,255,255,0.8);
     background: rgba(0,0,0,0.3);
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.2;
 }
