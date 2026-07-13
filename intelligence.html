@@ -23,11 +23,12 @@
         </a>
     </div>
 
-    <div id="intelligence" style="min-height: 100vh; overflow: hidden; position: relative;">
-
-    <!-- Abstract Tech Background -->
-    <div class="bg-glow"></div>
-    <div class="bg-glow blue"></div>
+        <div id="intelligence" style="min-height: 100vh; position: relative; background-color: #030712; color: #F3F4F6; font-family: 'Inter', sans-serif;">
+    
+    <!-- Premium Grid Background -->
+    <div class="ai-grid-bg"></div>
+    <div class="ai-glow-orb orb-1"></div>
+    <div class="ai-glow-orb orb-2"></div>
 
     <nav id="navbar">
         <div class="logo-container">
@@ -39,111 +40,136 @@
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#impact">Impact</a></li>
-            <li><a href="#contact" class="cta-btn small">Consultation</a></li>
+            <li><a href="#contact" class="cta-btn small outline-blue">Consultation</a></li>
         </ul>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <div class="hero-content">
-            <span class="hero-tagline blue-tag">AI Engineering & Data Analytics</span>
-            <h1>Architecting the <span class="gradient-text">Intelligent Enterprise</span></h1>
-            <p>We build autonomous AI systems, Intelligent Document Processing, and high-performance data foundations that drive ROI and competitive advantage.</p>
-            <div class="hero-buttons">
-                <a href="#services" class="cta-btn solid-blue">Explore Capabilities</a>
-                <a href="#contact" class="cta-btn outline-blue">Talk to an Architect</a>
+    <!-- EPIC CENTERED HERO SECTION -->
+    <header class="hero-centered">
+        <div class="hero-content-centered">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span> Next-Gen AI Engineering & Data Analytics
+            </div>
+            <h1 class="hero-title">Architecting the <br><span class="gradient-text-mesh">Intelligent Enterprise</span></h1>
+            <p class="hero-subtitle">We build autonomous AI systems, Intelligent Document Processing, and high-performance data foundations that drive ROI and competitive advantage.</p>
+            <div class="hero-buttons-centered">
+                <a href="#services" class="cta-btn solid-blue glow-effect">Explore Capabilities <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                <a href="#contact" class="cta-btn outline-blue glass-btn">Talk to an Architect</a>
             </div>
         </div>
         
-        <!-- Abstract Glassmorphism Dashboard Graphic -->
-        <div class="hero-graphic">
-            <div class="glass-card main-dash">
-                <div class="dash-header">
-                    <ion-icon name="server-outline"></ion-icon>
-                    <span>Cloud Data Lakehouse</span>
+        <!-- Dashboard Graphic Preview Below Text -->
+        <div class="hero-graphic-centered">
+            <div class="glass-panel main-panel">
+                <div class="panel-header">
+                    <div class="mac-dots"><span></span><span></span><span></span></div>
+                    <div class="panel-title">System Status: Active</div>
                 </div>
-                <div class="dash-body">
-                    <div class="bar-chart">
-                        <div class="bar h-70"></div>
-                        <div class="bar h-40"></div>
-                        <div class="bar h-90"></div>
-                        <div class="bar h-60"></div>
-                        <div class="bar h-100 highlight-bar"></div>
+                <div class="panel-body">
+                    <div class="stat-row">
+                        <div class="stat-box">
+                            <ion-icon name="server-outline" class="icon-cyan"></ion-icon>
+                            <div class="stat-details">
+                                <span>Cloud Lakehouse</span>
+                                <strong>Optimal</strong>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <ion-icon name="document-text-outline" class="icon-purple"></ion-icon>
+                            <div class="stat-details">
+                                <span>Document OCR</span>
+                                <strong>99.8% Acc.</strong>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <ion-icon name="hardware-chip-outline" class="icon-blue"></ion-icon>
+                            <div class="stat-details">
+                                <span>LLM Agent</span>
+                                <strong>Active</strong>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="glass-card float-card card-1">
-                <ion-icon name="document-text-outline" class="icon-blue"></ion-icon>
-                <div class="card-text">
-                    <strong>Document OCR</strong>
-                    <span>Processing... 99.8% Accuracy</span>
-                </div>
-            </div>
-
-            <div class="glass-card float-card card-2">
-                <ion-icon name="hardware-chip-outline" class="icon-purple"></ion-icon>
-                <div class="card-text">
-                    <strong>LLM Agent</strong>
-                    <span>RAG Query Active</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- CAPABILITIES SECTION -->
-    <section id="services" class="capabilities">
-        <h2 class="section-title text-center">Our <span class="gradient-text">Capabilities</span></h2>
+    <!-- BENTO BOX SERVICES SECTION -->
+    <section id="services" class="bento-section">
+        <div class="section-header-centered">
+            <h2 class="section-title">Our <span class="gradient-text-mesh">Capabilities</span></h2>
+            <p>Comprehensive solutions designed for scale.</p>
+        </div>
         
-        <div class="services-container">
-            <!-- Pillar 1: AI Engineering -->
-            <div class="service-pillar">
-                <div class="pillar-header">
-                    <ion-icon name="git-network-outline" class="icon-blue lg"></ion-icon>
-                    <h3>AI Engineering</h3>
+        <div class="bento-grid">
+            <!-- Bento Item 1: Large (AI Engineering) -->
+            <div class="bento-card bento-large">
+                <div class="bento-icon-wrapper cyan-bg">
+                    <ion-icon name="git-network-outline"></ion-icon>
                 </div>
-                <ul class="pillar-list">
-                    <li><ion-icon name="checkmark-outline"></ion-icon> <span><strong>Intelligent Document Processing:</strong> Purchase Agreement automation and smart OCR.</span></li>
-                    <li><ion-icon name="checkmark-outline"></ion-icon> <span><strong>Generative AI & LLMs:</strong> Custom RAG implementations and Enterprise Chatbots.</span></li>
-                    <li><ion-icon name="checkmark-outline"></ion-icon> <span><strong>AI Agent Development:</strong> Autonomous workflows and task automation.</span></li>
-                    <li><ion-icon name="checkmark-outline"></ion-icon> <span><strong>AI Strategy & Readiness:</strong> Infrastructure evaluation and ROI mapping.</span></li>
+                <h3>AI Engineering & Machine Learning</h3>
+                <p>We build production-ready ML pipelines and custom models to automate decision-making.</p>
+                <ul class="bento-list">
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Custom LLM Integrations (RAG)</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Voice Agents & Assistants</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Computer Vision Models</li>
                 </ul>
             </div>
-
-            <!-- Pillar 2: Data & Analytics -->
-            <div class="service-pillar">
-                <div class="pillar-header">
-                    <ion-icon name="pie-chart-outline" class="icon-purple lg"></ion-icon>
-                    <h3>Data & Analytics</h3>
+            
+            <!-- Bento Item 2: Small (Document OCR) -->
+            <div class="bento-card bento-small glass-accent">
+                <div class="bento-icon-wrapper purple-bg">
+                    <ion-icon name="scan-outline"></ion-icon>
                 </div>
-                <ul class="pillar-list">
-                    <li><ion-icon name="checkmark-outline"></ion-icon> <span><strong>Cloud Data Lakehouses:</strong> Scalable, centralized data architectures.</span></li>
-                    <li><ion-icon name="checkmark-outline"></ion-icon> <span><strong>Data Engineering & Pipelines:</strong> Automated ETL and real-time data streaming.</span></li>
-                    <li><ion-icon name="checkmark-outline"></ion-icon> <span><strong>Dashboards & BI:</strong> Executive-level real-time operational insights.</span></li>
-                    <li><ion-icon name="checkmark-outline"></ion-icon> <span><strong>Data Strategy & Governance:</strong> Security, compliance, and master data management.</span></li>
+                <h3>Intelligent Document Processing</h3>
+                <p>Automate data extraction from Purchase Agreements, Invoices, and unstructured text with 99% accuracy.</p>
+            </div>
+            
+            <!-- Bento Item 3: Small (Cloud Data) -->
+            <div class="bento-card bento-small glass-accent">
+                <div class="bento-icon-wrapper blue-bg">
+                    <ion-icon name="cloud-done-outline"></ion-icon>
+                </div>
+                <h3>Cloud Infrastructure</h3>
+                <p>Scalable, secure, and compliant cloud architectures deployed on AWS, Azure, or Google Cloud.</p>
+            </div>
+            
+            <!-- Bento Item 4: Large (Data Analytics) -->
+            <div class="bento-card bento-large">
+                <div class="bento-icon-wrapper cyan-bg">
+                    <ion-icon name="stats-chart-outline"></ion-icon>
+                </div>
+                <h3>Enterprise Data Analytics</h3>
+                <p>Transform raw data into actionable insights through modern data stacks and intelligent reporting.</p>
+                <ul class="bento-list">
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Modern Data Lakehouses</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Real-time Dashboards</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Data Governance & Security</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="contact">
-        <div class="footer-content">
+    <footer style="border-top: 1px solid rgba(255,255,255,0.05); padding: 60px 5%; margin-top: 60px; background: rgba(0,0,0,0.2);">
+        <div class="footer-content" style="max-width: 1200px; margin: 0 auto;">
             <div class="footer-brand">
-                <h3>ALMA <span class="highlight-blue">INTELLIGENCE</span></h3>
-                <p>Empowering businesses through advanced AI and Data Engineering.</p>
+                <h3 style="display: flex; align-items: center; gap: 10px;">
+                    <img src="assets/logo_ai.png" alt="Logo" style="height:30px;">
+                    ALMA <span class="highlight-blue">INTELLIGENCE</span>
+                </h3>
+                <p style="margin-top: 20px;">Architecting the Intelligent Enterprise.</p>
             </div>
             <div class="footer-links">
-                <h4>Contact</h4>
+                <h4 style="color: #00E1FF;">Contact</h4>
+                <p><ion-icon name="mail-outline"></ion-icon> info@almakinetics.com</p>
                 <p><ion-icon name="location-outline"></ion-icon> San Juan, Puerto Rico</p>
-                <p><ion-icon name="mail-outline"></ion-icon> hello@almasolutions.com</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Alma Group - Intelligence Division. All rights reserved.</p>
+        <div class="footer-bottom" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); color: #64748b; font-size: 0.9rem;">
+            &copy; 2026 Alma Intelligence. All rights reserved.
         </div>
     </footer>
-
     </div>
     
     <script src="script.js"></script>
