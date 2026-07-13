@@ -72,11 +72,51 @@
       "Machine Dimensions": "663 x 696 x 750 mm",
       "Cleaning Width": "50 cm",
       "Water Tank": "15L Clean / 15L Waste",
-      "Cleaning Efficiency": "1,000 - 1,200 m²/h",
+      "Cleaning Efficiency": "1,000 - 1,200 m\u00b2/h",
       "Battery Capacity": "60 Ah",
       "Run Time": "Up to 8 hours (scrubbing)",
       "Charging Time": "3-4 hours",
       "Noise Level": "< 70 dB(A)"
+    }
+  },
+  "BellaBot": {
+    "id": "bellabot",
+    "name": "BellaBot",
+    "subtitle": "Premium Delivery Robot",
+    "hero_image": "assets/images/nav_product_bellabot_f807eb57b5.png",
+    "hero_description": "BellaBot, the premium delivery robot, inherits the outstanding characteristics of the previous generation, while being endowed with superior human-Robot interaction capabilities.",
+    "alma_value": "With Alma Kinetics, BellaBot becomes a seamless part of your service staff. We program precise waypoints for your restaurant or hotel, train your staff to maximize efficiency, and provide round-the-clock support.",
+    "features": [
+      {
+        "icon": "heart-outline",
+        "title": "Bionic Design",
+        "desc": "An innovative bionic design language that provides unprecedented warmth and affection."
+      },
+      {
+        "icon": "hand-left-outline",
+        "title": "Tactile Feedback",
+        "desc": "The new tactile interaction makes BellaBot more engaging, offering an unprecedented human-robot experience."
+      },
+      {
+        "icon": "chatbubbles-outline",
+        "title": "AI Voice Interaction",
+        "desc": "Newly added AI voice module supports hundreds of exclusive contextual dialogue contents."
+      },
+      {
+        "icon": "navigate-outline",
+        "title": "Dual SLAM Technology",
+        "desc": "Supports both Laser SLAM and Visual SLAM for accurate positioning in any scenario."
+      }
+    ],
+    "specs": {
+      "Machine Dimensions": "565 x 537 x 1290 mm",
+      "Machine Weight": "57 kg",
+      "Payload Capacity": "40 kg (10 kg per tray)",
+      "Battery Life": "Up to 24 hours",
+      "Charging Time": "4.5 hours",
+      "Cruise Speed": "0.5 - 1.2 m/s",
+      "Clearance": "Min 70 cm path",
+      "Battery Type": "Swappable Battery"
     }
   }
 }
