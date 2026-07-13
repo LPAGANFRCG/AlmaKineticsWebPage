@@ -203,3 +203,88 @@ const capRevealObserver = new IntersectionObserver((entries) => {
 
 capabilityCards.forEach(card => capRevealObserver.observe(card));
 
+
+// =========================================
+// ROBOT SPECS MODAL LOGIC
+// =========================================
+const specsModal = document.getElementById('specs-modal');
+const closeModalBtn = document.getElementById('close-modal');
+const modalImg = document.getElementById('modal-img');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalSpecs = document.getElementById('modal-specs');
+
+const defaultSpecs = {
+    delivery: [
+        { label: "Battery Life", value: "Up to 12-24 hours" },
+        { label: "Payload Capacity", value: "30kg - 300kg" },
+        { label: "Navigation", value: "3D LiDAR + Vision" },
+        { label: "Interaction", value: "Multimodal Voice & Touch" }
+    ],
+    cleaning: [
+        { label: "Cleaning Efficiency", value: "1000 - 1500 ㎡/h" },
+        { label: "Battery Capacity", value: "20 Ah (3-4h charge)" },
+        { label: "Water Tank", value: "4L Clean / 6.5L Waste" },
+        { label: "Noise Level", value: "< 76 dB(A)" }
+    ],
+    humanoid: [
+        { label: "Degrees of Freedom", value: "40+ DOF" },
+        { label: "Perception", value: "Full-body tactile & vision" },
+        { label: "Actuation", value: "High-torque joint motors" },
+        { label: "Autonomy", value: "Embodied AI / LLM integration" }
+    ]
+};
+
+// Open modal on card click
+document.querySelectorAll('.capability-card[data-category="products"]').forEach(card => {
+    card.addEventListener('click', () => {
+        const img = card.querySelector('.cap-bg-img').src;
+        const title = card.querySelector('h3').innerText;
+        const desc = card.querySelector('.cap-desc').innerText;
+
+        modalImg.src = img;
+        modalTitle.innerText = title;
+        modalDesc.innerText = desc;
+
+        // Determine spec type
+        let specType = defaultSpecs.delivery;
+        const lowerDesc = desc.toLowerCase();
+        if (lowerDesc.includes('clean') || lowerDesc.includes('sweep') || lowerDesc.includes('scrub') || title.toLowerCase().includes('cc1') || title.toLowerCase().includes('mt1')) {
+            specType = defaultSpecs.cleaning;
+        } else if (lowerDesc.includes('humanoid') || title.includes('D7') || title.includes('D9')) {
+            specType = defaultSpecs.humanoid;
+        } else if (title.includes('T150') || title.includes('T300') || title.includes('T600')) {
+            specType = [
+                { label: "Payload Capacity", value: "150kg - 600kg" },
+                { label: "Navigation", value: "Autonomous VSLAM" },
+                { label: "Environment", value: "Industrial / Warehouse" },
+                { label: "Integration", value: "Elevator & Gate API" }
+            ];
+        }
+
+        // Generate specs HTML
+        modalSpecs.innerHTML = '';
+        specType.forEach(spec => {
+            const specDiv = document.createElement('div');
+            specDiv.className = 'spec-item';
+            specDiv.innerHTML = `
+                <div class="spec-label">${spec.label}</div>
+                <div class="spec-value">${spec.value}</div>
+            `;
+            modalSpecs.appendChild(specDiv);
+        });
+
+        specsModal.classList.add('open');
+    });
+});
+
+// Close modal
+closeModalBtn.addEventListener('click', () => {
+    specsModal.classList.remove('open');
+});
+
+specsModal.addEventListener('click', (e) => {
+    if (e.target === specsModal) {
+        specsModal.classList.remove('open');
+    }
+});
