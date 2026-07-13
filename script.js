@@ -241,38 +241,28 @@ document.querySelectorAll('.capability-card[data-category="products"]').forEach(
         const img = card.querySelector('.cap-bg-img').src;
         const title = card.querySelector('h3').innerText;
         const desc = card.querySelector('.cap-desc').innerText;
+        const featuresRaw = card.getAttribute('data-features');
 
         modalImg.src = img;
         modalTitle.innerText = title;
         modalDesc.innerText = desc;
 
-        // Determine spec type
-        let specType = defaultSpecs.delivery;
-        const lowerDesc = desc.toLowerCase();
-        if (lowerDesc.includes('clean') || lowerDesc.includes('sweep') || lowerDesc.includes('scrub') || title.toLowerCase().includes('cc1') || title.toLowerCase().includes('mt1')) {
-            specType = defaultSpecs.cleaning;
-        } else if (lowerDesc.includes('humanoid') || title.includes('D7') || title.includes('D9')) {
-            specType = defaultSpecs.humanoid;
-        } else if (title.includes('T150') || title.includes('T300') || title.includes('T600')) {
-            specType = [
-                { label: "Payload Capacity", value: "150kg - 600kg" },
-                { label: "Navigation", value: "Autonomous VSLAM" },
-                { label: "Environment", value: "Industrial / Warehouse" },
-                { label: "Integration", value: "Elevator & Gate API" }
-            ];
-        }
-
-        // Generate specs HTML
+        // Generate specs HTML from tags
         modalSpecs.innerHTML = '';
-        specType.forEach(spec => {
-            const specDiv = document.createElement('div');
-            specDiv.className = 'spec-item';
-            specDiv.innerHTML = `
-                <div class="spec-label">${spec.label}</div>
-                <div class="spec-value">${spec.value}</div>
-            `;
-            modalSpecs.appendChild(specDiv);
-        });
+        if (featuresRaw) {
+            const features = featuresRaw.split('|');
+            features.forEach(feature => {
+                const specDiv = document.createElement('div');
+                specDiv.className = 'spec-item';
+                specDiv.innerHTML = `
+                    <div class="spec-value" style="font-size: 0.9rem; padding: 0.4rem 0;">
+                        <ion-icon name="checkmark-circle-outline" style="color: var(--accent); vertical-align: middle; margin-right: 5px; font-size: 1.2rem;"></ion-icon>
+                        <span style="vertical-align: middle;">${feature}</span>
+                    </div>
+                `;
+                modalSpecs.appendChild(specDiv);
+            });
+        }
 
         specsModal.classList.add('open');
     });

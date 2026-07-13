@@ -997,3 +997,28 @@ footer {
         gap: 1rem;
     }
 }
+.robot-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease 0.1s;
+}
+
+.capability-card:hover .robot-features {
+    max-height: 120px;
+    opacity: 1;
+}
+
+.robot-feature-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 4px;
+    color: rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.3);
+    white-space: nowrap;
+}
