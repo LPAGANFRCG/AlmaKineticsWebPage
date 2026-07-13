@@ -118,5 +118,399 @@
       "Clearance": "Min 70 cm path",
       "Battery Type": "Swappable Battery"
     }
+  },
+  "KettyBot Pro": {
+    "id": "kettybot-pro",
+    "name": "KettyBot Pro",
+    "subtitle": "Delivery & Advertising Robot",
+    "hero_image": "assets/images/nav_product_kettybotpro_64d5202d1a.png",
+    "hero_description": "KettyBot Pro represents the next evolution of reception and delivery. Featuring enhanced displays and upgraded smart navigation, it is the perfect marketing and service tool.",
+    "alma_value": "We customize KettyBot Pro's advertising campaigns and navigation paths. Our local support ensures your campaigns are always running smoothly while the robot expertly navigates crowded spaces.",
+    "features": [
+      {
+        "icon": "videocam-outline",
+        "title": "18.5\" HD Display",
+        "desc": "Customizable large screen for dynamic advertisements and reception menus."
+      },
+      {
+        "icon": "walk-outline",
+        "title": "Ultra-narrow Pass",
+        "desc": "Minimum clearance of just 55cm, perfect for tight aisles and crowded spaces."
+      },
+      {
+        "icon": "chatbubbles-outline",
+        "title": "AI Reception",
+        "desc": "Smart voice interactions and greeting modes to attract and guide customers."
+      }
+    ],
+    "specs": {
+      "Dimensions": "451 x 436 x 1125 mm",
+      "Weight": "35 kg",
+      "Payload": "30 kg",
+      "Screen": "18.5\""
+    }
+  },
+  "PuduBot 2": {
+    "id": "pudubot-2",
+    "name": "PuduBot 2",
+    "subtitle": "Universal Delivery Robot",
+    "hero_image": "assets/images/nav_product_pudubot2_478d35cdae.png",
+    "hero_description": "The newly upgraded PuduBot 2 features the proprietary PUDU VSLAM+ technology, allowing for markerless deployment and improved environmental adaptability.",
+    "alma_value": "Our implementation of PuduBot 2 eliminates the need for physical markers. We deploy it seamlessly, integrating it with your kitchen workflows to speed up table turnaround.",
+    "features": [
+      {
+        "icon": "navigate-circle-outline",
+        "title": "Markerless Deployment",
+        "desc": "Pure VSLAM+ technology means no stickers on ceilings, saving 75% on deployment time."
+      },
+      {
+        "icon": "battery-charging-outline",
+        "title": "LFP Battery",
+        "desc": "High-capacity Lithium Iron Phosphate battery for superior safety and long life."
+      },
+      {
+        "icon": "speedometer-outline",
+        "title": "Improved Stability",
+        "desc": "Upgraded suspension system for smoother delivery of soups and liquids."
+      }
+    ],
+    "specs": {
+      "Dimensions": "588 x 538 x 1290 mm",
+      "Payload": "40 kg",
+      "Battery": "LFP, 24h run time",
+      "Deployment": "Markerless"
+    }
+  },
+  "FlashBot": {
+    "id": "flashbot",
+    "name": "FlashBot",
+    "subtitle": "Building Delivery Robot",
+    "hero_image": "assets/images/nav_flashbot_new_e3c621b5fd.png",
+    "hero_description": "FlashBot is designed for smart building delivery. Capable of taking the elevator safely and reliably to provide secure room delivery for hotels and offices.",
+    "alma_value": "We integrate FlashBot directly into your building's IoT ecosystem, connecting it to elevators and automatic doors for true multi-floor autonomous delivery.",
+    "features": [
+      {
+        "icon": "business-outline",
+        "title": "IoT Integration",
+        "desc": "Communicates directly with elevator systems for multi-floor navigation."
+      },
+      {
+        "icon": "lock-closed-outline",
+        "title": "Secure Compartments",
+        "desc": "UV sterilized, password-protected cabins ensure safe and hygienic deliveries."
+      },
+      {
+        "icon": "scan-outline",
+        "title": "3D Obstacle Avoidance",
+        "desc": "Multiple sensors provide comprehensive perception to avoid small obstacles safely."
+      }
+    ],
+    "specs": {
+      "Dimensions": "539 x 515 x 1050 mm",
+      "Payload": "30 kg",
+      "Speed": "0.5 - 1.2 m/s",
+      "Elevator Integration": "Supported"
+    }
+  },
+  "FlashBot Arm": {
+    "id": "flashbot-arm",
+    "name": "FlashBot Arm",
+    "subtitle": "Semi-Humanoid Service Robot",
+    "hero_image": "assets/images/nav_product_flashbot_arm_58961abf05.png",
+    "hero_description": "A pioneering embodied AI robot equipped with dual robotic arms. Designed for complex manipulation tasks previously only possible by humans.",
+    "alma_value": "We program custom manipulation algorithms for FlashBot Arm, allowing it to perform highly specific physical tasks like pressing elevator buttons or picking up objects in your facility.",
+    "features": [
+      {
+        "icon": "hardware-chip-outline",
+        "title": "Embodied AI",
+        "desc": "Advanced AI models that understand and interact with the physical world."
+      },
+      {
+        "icon": "hand-right-outline",
+        "title": "Dual Robotic Arms",
+        "desc": "High degrees of freedom for precise and complex object manipulation."
+      },
+      {
+        "icon": "eye-outline",
+        "title": "Vision-Action Integration",
+        "desc": "Coordinates visual perception with physical action seamlessly."
+      }
+    ],
+    "specs": {
+      "Category": "Semi-Humanoid",
+      "Manipulation": "Dual Arms",
+      "AI Model": "Embodied Large Model"
+    }
+  },
+  "CC1 Pro": {
+    "id": "cc1-pro",
+    "name": "CC1 Pro",
+    "subtitle": "AI-powered Autonomous Cleaning Robot",
+    "hero_image": "assets/images/nav_product_cc1_Pro_7de75f36ae.png",
+    "hero_description": "An upgraded version of the CC1, featuring enhanced cleaning modules and advanced AI scheduling for massive commercial spaces.",
+    "alma_value": "For massive facilities, we optimize CC1 Pro fleets with centralized management, ensuring no zone is missed while reducing your janitorial overhead significantly.",
+    "features": [
+      {
+        "icon": "water-outline",
+        "title": "Deep Cleaning",
+        "desc": "Enhanced brush pressure and water flow for stubborn stains."
+      },
+      {
+        "icon": "battery-charging-outline",
+        "title": "Fully Autonomous",
+        "desc": "Auto-charges, auto-drains, and auto-refills without human intervention."
+      },
+      {
+        "icon": "stats-chart-outline",
+        "title": "Cleaning Reports",
+        "desc": "Generates detailed performance and coverage reports automatically."
+      }
+    ],
+    "specs": {
+      "Cleaning Width": "500 mm",
+      "Water Tank": "15L",
+      "Efficiency": "Up to 1500 m\u00b2/h",
+      "Autonomy": "Full"
+    }
+  },
+  "MT1": {
+    "id": "mt1",
+    "name": "MT1",
+    "subtitle": "AI Powered Robotic Sweeper",
+    "hero_image": "assets/images/nav_product_mt_9d40c8e237.webp",
+    "hero_description": "A compact, highly efficient robotic sweeper designed for both indoor and outdoor hard surfaces, managing dust and small debris with ease.",
+    "alma_value": "We map your indoor and outdoor transition zones, programming MT1 to handle high-traffic dust accumulation areas continuously, keeping your floors consistently presentable.",
+    "features": [
+      {
+        "icon": "leaf-outline",
+        "title": "Indoor/Outdoor",
+        "desc": "Versatile enough to handle transitions between different environments."
+      },
+      {
+        "icon": "sync-outline",
+        "title": "Continuous Sweeping",
+        "desc": "Large debris hopper and long battery life for extended sweeping sessions."
+      },
+      {
+        "icon": "eye-outline",
+        "title": "Smart Perception",
+        "desc": "Detects curbs and drop-offs to safely navigate outdoor areas."
+      }
+    ],
+    "specs": {
+      "Type": "Sweeper",
+      "Environment": "Indoor/Outdoor",
+      "Navigation": "Laser + Visual"
+    }
+  },
+  "MT1 Vac": {
+    "id": "mt1-vac",
+    "name": "MT1 Vac",
+    "subtitle": "Robotic Sweeper & Vacuum",
+    "hero_image": "assets/images/nav_MT_1_Vac_ad6172aa60.png",
+    "hero_description": "Combines robust sweeping mechanics with powerful vacuum suction, perfect for capturing fine dust and larger debris in industrial and commercial settings.",
+    "alma_value": "Ideal for warehouses and retail. We configure the MT1 Vac to run during off-hours, ensuring your space is spotless before the workday begins.",
+    "features": [
+      {
+        "icon": "funnel-outline",
+        "title": "Powerful Suction",
+        "desc": "High-efficiency vacuum motor captures fine particulates."
+      },
+      {
+        "icon": "construct-outline",
+        "title": "Industrial Build",
+        "desc": "Durable chassis designed for tough commercial environments."
+      },
+      {
+        "icon": "time-outline",
+        "title": "Automated Scheduling",
+        "desc": "Set it and forget it with app-based scheduling."
+      }
+    ],
+    "specs": {
+      "Type": "Sweeper + Vacuum",
+      "Application": "Commercial/Industrial",
+      "Battery": "High Capacity"
+    }
+  },
+  "MT1 Max": {
+    "id": "mt1-max",
+    "name": "MT1 Max",
+    "subtitle": "3D Perception Sweeper",
+    "hero_image": "assets/images/nav_MT_1_Max_c1c3a6b01b.png",
+    "hero_description": "The ultimate sweeping robot, featuring 3D environmental perception to handle the most complex, dynamic spaces safely and efficiently.",
+    "alma_value": "For the most demanding environments, we utilize the MT1 Max's 3D perception to create highly accurate safety zones, preventing any interference with human operations.",
+    "features": [
+      {
+        "icon": "cube-outline",
+        "title": "3D Perception",
+        "desc": "Advanced LiDAR and depth cameras create a 3D understanding of the space."
+      },
+      {
+        "icon": "shield-checkmark-outline",
+        "title": "Enhanced Safety",
+        "desc": "Instantly detects and reacts to dynamic obstacles like forklifts or crowds."
+      },
+      {
+        "icon": "flash-outline",
+        "title": "Max Efficiency",
+        "desc": "Optimized path planning algorithms cover more area in less time."
+      }
+    ],
+    "specs": {
+      "Sensors": "3D LiDAR + RGBD",
+      "Type": "Advanced Sweeper",
+      "Safety": "Dynamic Avoidance"
+    }
+  },
+  "BG1 Series": {
+    "id": "bg1-series",
+    "name": "BG1 Series",
+    "subtitle": "Large Scrubber-Dryer Robot",
+    "hero_image": "assets/images/nav_product_BG_1_1_940b41c677.png",
+    "hero_description": "Designed for massive facilities, the BG1 Series is an AI-native large scrubber-dryer that delivers industrial-grade cleaning performance.",
+    "alma_value": "We deploy the BG1 in massive warehouses and transport hubs. Our integration includes mapping millions of square feet and setting up automated service stations for zero-downtime operation.",
+    "features": [
+      {
+        "icon": "water-outline",
+        "title": "Massive Capacity",
+        "desc": "Huge clean and waste water tanks for hours of uninterrupted scrubbing."
+      },
+      {
+        "icon": "car-outline",
+        "title": "Industrial Scrubbing",
+        "desc": "High-pressure brush system removes stubborn grime and tire marks."
+      },
+      {
+        "icon": "analytics-outline",
+        "title": "Fleet Management",
+        "desc": "Manage multiple BG1 units from a centralized cloud dashboard."
+      }
+    ],
+    "specs": {
+      "Type": "Large Scrubber",
+      "Application": "Warehouses, Airports",
+      "Management": "Cloud Fleet"
+    }
+  },
+  "Pudu T150": {
+    "id": "t150",
+    "name": "Pudu T150",
+    "subtitle": "Light-payload Industrial Delivery",
+    "hero_image": "assets/images/nav_product_T150_b09ac8e95b.png",
+    "hero_description": "A versatile industrial delivery robot with a 150kg payload capacity, designed to automate material transport in factories and warehouses.",
+    "alma_value": "We seamlessly integrate the T150 into your existing assembly lines, programming it to communicate with your WMS to automate parts delivery and reduce manual handling.",
+    "features": [
+      {
+        "icon": "cube-outline",
+        "title": "150kg Payload",
+        "desc": "Handles significant loads while maintaining agility in tight factory aisles."
+      },
+      {
+        "icon": "sync-circle-outline",
+        "title": "Flexible Attachments",
+        "desc": "Compatible with various top modules like rollers, lifters, or bins."
+      },
+      {
+        "icon": "git-network-outline",
+        "title": "WMS Integration",
+        "desc": "Connects directly to Warehouse Management Systems for automated tasking."
+      }
+    ],
+    "specs": {
+      "Payload": "150 kg",
+      "Navigation": "SLAM",
+      "Application": "Manufacturing, Logistics"
+    }
+  },
+  "Pudu T600": {
+    "id": "t600",
+    "name": "Pudu T600",
+    "subtitle": "Heavy-payload Industrial Delivery",
+    "hero_image": "assets/images/nav_product_T600_536ed98413.png",
+    "hero_description": "A heavy-duty industrial powerhouse capable of transporting up to 600kg. The T600 revolutionizes heavy material handling with precision autonomy.",
+    "alma_value": "For heavy industry, the T600 is a game-changer. We handle the complex deployment required for heavy payloads, ensuring strict safety protocols and optimized heavy-traffic routing.",
+    "features": [
+      {
+        "icon": "barbell-outline",
+        "title": "600kg Payload",
+        "desc": "Massive carrying capacity for heavy manufacturing and pallet transport."
+      },
+      {
+        "icon": "shield-outline",
+        "title": "Industrial Safety",
+        "desc": "360-degree safety sensors designed specifically for high-momentum loads."
+      },
+      {
+        "icon": "battery-charging-outline",
+        "title": "High Uptime",
+        "desc": "Rapid charging and high-capacity battery for multi-shift operations."
+      }
+    ],
+    "specs": {
+      "Payload": "600 kg",
+      "Safety": "360\u00b0 Industrial Grade",
+      "Application": "Heavy Manufacturing"
+    }
+  },
+  "PUDU D7": {
+    "id": "d7",
+    "name": "PUDU D7",
+    "subtitle": "Semi-Humanoid Robot",
+    "hero_image": "assets/images/PUDU_D7_712b72b688.webp",
+    "hero_description": "The first-generation semi-humanoid robot by Pudu Robotics, bridging the gap between specialized service robots and general-purpose humanoids.",
+    "alma_value": "As an advanced robotics integrator, Alma Kinetics offers R&D partnerships to deploy the D7 for cutting-edge pilot programs in complex service environments.",
+    "features": [
+      {
+        "icon": "body-outline",
+        "title": "Semi-Humanoid Form",
+        "desc": "Human-like upper body for complex interactions, mounted on a stable wheeled base."
+      },
+      {
+        "icon": "hardware-chip-outline",
+        "title": "General AI",
+        "desc": "Powered by advanced LLMs and embodied AI for generalized task understanding."
+      },
+      {
+        "icon": "hand-right-outline",
+        "title": "Dexterous Hands",
+        "desc": "Capable of grasping and manipulating a wide variety of everyday objects."
+      }
+    ],
+    "specs": {
+      "Form": "Wheeled Semi-Humanoid",
+      "AI": "Embodied AI",
+      "Use Case": "R&D, Advanced Service"
+    }
+  },
+  "PUDU D9": {
+    "id": "d9",
+    "name": "PUDU D9",
+    "subtitle": "Full-sized Bipedal Humanoid",
+    "hero_image": "assets/images/nav_pudu_d9_baa71e3b5b.png",
+    "hero_description": "The ultimate frontier of robotics. The D9 is a full-sized bipedal humanoid robot designed to operate in environments built entirely for humans.",
+    "alma_value": "Alma Kinetics is at the forefront of humanoid integration. We prepare your infrastructure for the future, piloting the D9 in environments where wheels cannot go.",
+    "features": [
+      {
+        "icon": "walk-outline",
+        "title": "Bipedal Locomotion",
+        "desc": "Can climb stairs, step over obstacles, and navigate unstructured human environments."
+      },
+      {
+        "icon": "body-outline",
+        "title": "Full Humanoid",
+        "desc": "Matches human proportions to seamlessly use tools and spaces designed for people."
+      },
+      {
+        "icon": "planet-outline",
+        "title": "The Future of Labor",
+        "desc": "Represents the ultimate goal of general-purpose automation."
+      }
+    ],
+    "specs": {
+      "Form": "Bipedal Humanoid",
+      "Mobility": "Stairs & Uneven Terrain",
+      "Use Case": "General Purpose"
+    }
   }
 }
