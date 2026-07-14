@@ -1413,6 +1413,27 @@ footer {
     100% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
 }
 
+
+/* AI Contact Form Overrides */
+#intelligence .ai-input {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--ai-glass-border);
+    border-radius: 8px;
+    color: #F3F4F6;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+#intelligence .ai-input:focus {
+    border-color: var(--ai-cyan);
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.2);
+    background: rgba(255,255,255,0.05);
+}
+
 @media (max-width: 992px) {
     #intelligence .bento-grid {
         grid-template-columns: 1fr;
