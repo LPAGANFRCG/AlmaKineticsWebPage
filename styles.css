@@ -83,6 +83,8 @@ nav.scrolled {
 
 .logo-img {
     height: 70px;
+    width: auto;
+    object-fit: contain;
     border-radius: 4px;
 }
 
