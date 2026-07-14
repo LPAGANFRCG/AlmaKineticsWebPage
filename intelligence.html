@@ -5,13 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alma Intelligence | AI & Data Engineering</title>
     <meta name="description" content="Alma Intelligence provides AI Engineering, Data Lakehouses, and Intelligent Document Processing.">
-    <link rel="icon" type="image/png" href="assets/logo_ai.png">
+    <link rel="icon" type="image/png" href="assets/logo_1.png">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <style>
+        /* Override AI-ish and default styles for a strong corporate look */
+        body {
+            background-color: #F8FAFC !important;
+            color: #334155 !important;
+            font-family: 'Roboto', sans-serif !important;
+        }
+        
+        h1, h2, h3, h4, h5, h6, .logo-text, .hero-tagline, .cta-btn, .nav-links a {
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 700 !important;
+            text-transform: none !important;
+        }
+
+        .hero-title {
+            font-weight: 900 !important;
+            color: #0f172a !important;
+        }
+
+        /* Hide AI backgrounds and orbs */
+        .ai-grid-bg, .ai-glow-orb, .bg-glow {
+            display: none !important;
+        }
+
+        /* Navbar Overrides */
+        nav, nav.scrolled {
+            background: #ffffff !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+            backdrop-filter: none !important;
+        }
+        
+        .logo-text, .nav-links a {
+            color: #0f172a !important;
+        }
+        
+        .nav-links a:hover {
+            color: #0f4c81 !important;
+        }
+
+        .highlight-blue {
+            color: #0f4c81 !important; /* Corporate Classic Blue */
+        }
+        
+        /* Buttons */
+        .cta-btn.solid-blue {
+            background: #0f4c81 !important;
+            color: #ffffff !important;
+            border: 2px solid #0f4c81 !important;
+            box-shadow: none !important;
+        }
+        .cta-btn.solid-blue:hover {
+            background: #0a365c !important;
+        }
+        
+        .cta-btn.outline-blue {
+            background: transparent !important;
+            color: #0f4c81 !important;
+            border: 2px solid #0f4c81 !important;
+            box-shadow: none !important;
+        }
+        .cta-btn.outline-blue:hover {
+            background: #0f4c81 !important;
+            color: #ffffff !important;
+        }
+
+        /* Brand Switcher */
+        .brand-switcher {
+            background: #ffffff !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+        }
+        .brand-tab {
+            color: #64748b !important;
+        }
+        .brand-tab.active-brand {
+            color: #0f4c81 !important;
+            border-bottom-color: #0f4c81 !important;
+        }
+
+        /* Sections */
+        .hero-centered {
+            background: #ffffff !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+        }
+        .hero-subtitle {
+            color: #475569 !important;
+        }
+        .hero-badge {
+            background: #e0e7ff !important;
+            color: #0f4c81 !important;
+            border: 1px solid #c7d2fe !important;
+        }
+        .pulse-dot {
+            background: #0f4c81 !important;
+            box-shadow: 0 0 0 0 rgba(15, 76, 129, 0.7) !important;
+        }
+
+        .gradient-text-mesh {
+            background: none !important;
+            -webkit-text-fill-color: #0f172a !important;
+            color: #0f172a !important;
+        }
+
+        .bento-section {
+            background: #F8FAFC !important;
+            color: #334155 !important;
+        }
+        .section-title {
+            color: #0f172a !important;
+        }
+
+        .bento-card, .glass-panel {
+            background: #ffffff !important;
+            border: 1px solid #e2e8f0 !important;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+            backdrop-filter: none !important;
+        }
+        .bento-card h3 {
+            color: #0f172a !important;
+        }
+        .bento-card p {
+            color: #475569 !important;
+        }
+        .bento-list li {
+            color: #334155 !important;
+        }
+        .bento-list ion-icon {
+            color: #0f4c81 !important;
+        }
+
+        .bento-icon-wrapper {
+            background: #f1f5f9 !important;
+        }
+        .bento-icon-wrapper ion-icon {
+            color: #0f4c81 !important;
+        }
+        
+        .ai-input {
+            background: #ffffff !important;
+            border: 1px solid #cbd5e1 !important;
+            color: #0f172a !important;
+        }
+        .ai-input::placeholder {
+            color: #94a3b8 !important;
+        }
+        .ai-input:focus {
+            border-color: #0f4c81 !important;
+            box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.1) !important;
+        }
+
+        footer {
+            background: #0f172a !important;
+            border-top: none !important;
+            color: #f8fafc !important;
+        }
+        footer .footer-brand h3 {
+            color: #ffffff !important;
+        }
+        footer p {
+            color: #cbd5e1 !important;
+        }
+        footer h4 {
+            color: #ffffff !important;
+        }
+        .footer-bottom {
+            border-top: 1px solid #334155 !important;
+            color: #94a3b8 !important;
+        }
+    </style>
 </head>
-<body style="background-color: #070A13; color: #E2E8F0; font-family: 'Inter', sans-serif;">
+<body style="background-color: #F8FAFC; color: #334155; font-family: 'Roboto', sans-serif;">
 
     <!-- Brand Switcher Tabs -->
     <div class="brand-switcher">
@@ -19,86 +189,46 @@
             <ion-icon name="hardware-chip-outline"></ion-icon> Alma Kinetics
         </a>
         <a href="intelligence.html" class="brand-tab active-brand ai-brand">
-            <ion-icon name="pulse-outline"></ion-icon> Alma Intelligence
+            <ion-icon name="business-outline"></ion-icon> Alma Intelligence
         </a>
     </div>
 
-        <div id="intelligence" style="min-height: 100vh; position: relative; background-color: #030712; color: #F3F4F6; font-family: 'Inter', sans-serif;">
+    <div id="intelligence" style="min-height: 100vh; position: relative;">
     
-    <!-- Premium Grid Background -->
-    <div class="ai-grid-bg"></div>
-    <div class="ai-glow-orb orb-1"></div>
-    <div class="ai-glow-orb orb-2"></div>
-
     <nav id="navbar">
         <div class="logo-container">
-            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: #fff;">
-                <img src="assets/logo_ai.png" alt="Alma Intelligence Logo" class="logo-img">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: #0f172a;">
+                <img src="assets/logo_1.png" alt="Alma Intelligence Logo" class="logo-img" style="height: 50px; margin-right: 15px;">
                 <span class="logo-text">ALMA <span class="highlight-blue">INTELLIGENCE</span></span>
             </a>
         </div>
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#impact">Impact</a></li>
-            <li><a href="#contact" class="cta-btn small outline-blue">Consultation</a></li>
+            <li><a href="#contact" class="cta-btn small solid-blue">Consultation</a></li>
         </ul>
     </nav>
 
     <!-- EPIC CENTERED HERO SECTION -->
-    <header class="hero-centered">
+    <header class="hero-centered" style="padding-top: 160px; padding-bottom: 80px;">
         <div class="hero-content-centered">
             <div class="hero-badge">
                 <span class="pulse-dot"></span> Next-Gen AI Engineering & Data Analytics
             </div>
-            <h1 class="hero-title">Architecting the <br><span class="gradient-text-mesh">Intelligent Enterprise</span></h1>
-            <p class="hero-subtitle">We build Custom AI Systems built for your business.</p>
+            <h1 class="hero-title" style="margin-bottom: 20px;">Architecting the <br><span class="highlight-blue">Intelligent Enterprise</span></h1>
+            <p class="hero-subtitle" style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 40px auto;">We build Custom AI Systems and scalable data foundations built for your business.</p>
             <div class="hero-buttons-centered">
-                <a href="#services" class="cta-btn solid-blue glow-effect">Explore Capabilities <ion-icon name="arrow-forward-outline"></ion-icon></a>
-                <a href="#contact" class="cta-btn outline-blue glass-btn">Talk to an Architect</a>
-            </div>
-        </div>
-        
-        <!-- Dashboard Graphic Preview Below Text -->
-        <div class="hero-graphic-centered">
-            <div class="glass-panel main-panel">
-                <div class="panel-header">
-                    <div class="mac-dots"><span></span><span></span><span></span></div>
-                    <div class="panel-title">System Status: Active</div>
-                </div>
-                <div class="panel-body">
-                    <div class="stat-row">
-                        <div class="stat-box">
-                            <ion-icon name="server-outline" class="icon-cyan"></ion-icon>
-                            <div class="stat-details">
-                                <span>Cloud Lakehouse</span>
-                                <strong>Optimal</strong>
-                            </div>
-                        </div>
-                        <div class="stat-box">
-                            <ion-icon name="document-text-outline" class="icon-purple"></ion-icon>
-                            <div class="stat-details">
-                                <span>Document OCR</span>
-                                <strong>99.8% Acc.</strong>
-                            </div>
-                        </div>
-                        <div class="stat-box">
-                            <ion-icon name="hardware-chip-outline" class="icon-blue"></ion-icon>
-                            <div class="stat-details">
-                                <span>LLM Agent</span>
-                                <strong>Active</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a href="#services" class="cta-btn solid-blue">Explore Capabilities <ion-icon name="arrow-forward-outline" style="vertical-align: middle; margin-left: 5px;"></ion-icon></a>
+                <a href="#contact" class="cta-btn outline-blue">Talk to an Architect</a>
             </div>
         </div>
     </header>
 
     <!-- BENTO BOX SERVICES SECTION -->
     <section id="services" class="bento-section">
-        <div class="section-header-centered">
-            <h2 class="section-title">Our <span class="gradient-text-mesh">Capabilities</span></h2>
-            <p>Comprehensive solutions designed for scale.</p>
+        <div class="section-header-centered" style="padding-top: 60px;">
+            <h2 class="section-title">Our <span class="highlight-blue">Capabilities</span></h2>
+            <p style="color: #475569; font-size: 1.1rem;">Comprehensive solutions designed for scale.</p>
         </div>
         
         <div class="bento-grid">
@@ -150,38 +280,37 @@
         </div>
     </section>
 
-
     <!-- CONTACT SECTION -->
-    <section id="contact" class="contact-section bento-section" style="max-width: 800px; margin: 0 auto; text-align: center; padding-top: 50px;">
-        <h2 class="section-title">Get In <span class="gradient-text-mesh">Touch</span></h2>
-        <p style="color: #94a3b8; margin-bottom: 40px;">Ready to transform your business? Let's talk.</p>
+    <section id="contact" class="contact-section bento-section" style="max-width: 800px; margin: 0 auto; text-align: center; padding-top: 80px; padding-bottom: 80px;">
+        <h2 class="section-title">Get In <span class="highlight-blue">Touch</span></h2>
+        <p style="color: #475569; margin-bottom: 40px; font-size: 1.1rem;">Ready to transform your business? Let's talk.</p>
         <form id="contact-form" class="contact-form glass-panel" style="text-align: left; padding: 40px;">
             <input type="text" id="name" placeholder="Your Name" required class="ai-input">
             <input type="email" id="email" placeholder="Your Email" required class="ai-input">
             <input type="text" id="company" placeholder="Company Name" class="ai-input">
             <textarea id="message" rows="5" placeholder="How can we help you?" required class="ai-input"></textarea>
-            <button type="submit" class="cta-btn solid-blue glow-effect" style="width: 100%; border: none; justify-content: center; font-size: 1.1rem; padding: 1.2rem;">Send Message</button>
+            <button type="submit" class="cta-btn solid-blue glow-effect" style="width: 100%; border: none; justify-content: center; font-size: 1.1rem; padding: 1.2rem; cursor: pointer;">Send Message</button>
             <div id="form-status" class="form-status"></div>
         </form>
     </section>
 
     <!-- FOOTER -->
-    <footer style="border-top: 1px solid rgba(255,255,255,0.05); padding: 60px 5%; margin-top: 60px; background: rgba(0,0,0,0.2);">
-        <div class="footer-content" style="max-width: 1200px; margin: 0 auto;">
+    <footer>
+        <div class="footer-content" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
             <div class="footer-brand">
-                <h3 style="display: flex; align-items: center; gap: 10px;">
-                    <img src="assets/logo_ai.png" alt="Logo" style="height:30px;">
+                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                    <img src="assets/logo_1.png" alt="Logo" style="height:40px;">
                     ALMA <span class="highlight-blue">INTELLIGENCE</span>
                 </h3>
-                <p style="margin-top: 20px;">Architecting the Intelligent Enterprise.</p>
+                <p style="max-width: 300px; line-height: 1.6;">Architecting the Intelligent Enterprise.</p>
             </div>
             <div class="footer-links">
-                <h4 style="color: #00E1FF;">Contact</h4>
-                <p><ion-icon name="mail-outline"></ion-icon> info@almakinetics.com</p>
-                <p><ion-icon name="location-outline"></ion-icon> San Juan, Puerto Rico</p>
+                <h4 style="margin-bottom: 15px;">Contact</h4>
+                <p style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;"><ion-icon name="mail-outline"></ion-icon> info@almakinetics.com</p>
+                <p style="display: flex; align-items: center; gap: 8px;"><ion-icon name="location-outline"></ion-icon> San Juan, Puerto Rico</p>
             </div>
         </div>
-        <div class="footer-bottom" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); color: #64748b; font-size: 0.9rem;">
+        <div class="footer-bottom" style="text-align: center; margin-top: 40px; padding-top: 20px;">
             &copy; 2026 Alma Intelligence. All rights reserved.
         </div>
     </footer>
