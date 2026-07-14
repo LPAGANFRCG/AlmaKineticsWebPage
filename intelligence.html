@@ -13,10 +13,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
     <style>
-        /* Override AI-ish and default styles for a strong corporate look */
+        /* Override AI-ish and default styles for a strong corporate dark look with blue accents */
         body {
-            background-color: #F8FAFC !important;
-            color: #334155 !important;
+            background-color: #121721 !important;
+            color: #f4f4f5 !important;
             font-family: 'Roboto', sans-serif !important;
         }
         
@@ -28,160 +28,161 @@
 
         .hero-title {
             font-weight: 900 !important;
-            color: #0f172a !important;
+            color: #ffffff !important;
         }
 
-        /* Hide AI backgrounds and orbs */
+        /* Hide AI backgrounds and orbs to keep it corporate, but keep the base dark */
         .ai-grid-bg, .ai-glow-orb, .bg-glow {
             display: none !important;
         }
 
         /* Navbar Overrides */
         nav, nav.scrolled {
-            background: #ffffff !important;
-            border-bottom: 1px solid #e2e8f0 !important;
-            backdrop-filter: none !important;
+            background: rgba(18, 23, 33, 0.9) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+            backdrop-filter: blur(12px) !important;
         }
         
         .logo-text, .nav-links a {
-            color: #0f172a !important;
+            color: #f4f4f5 !important;
         }
         
         .nav-links a:hover {
-            color: #0f4c81 !important;
+            color: #00a2ff !important;
         }
 
         .highlight-blue {
-            color: #0f4c81 !important; /* Corporate Classic Blue */
+            color: #00a2ff !important; /* Strong Blue Accent */
         }
         
         /* Buttons */
         .cta-btn.solid-blue {
-            background: #0f4c81 !important;
-            color: #ffffff !important;
-            border: 2px solid #0f4c81 !important;
+            background: #00a2ff !important;
+            color: #121721 !important;
+            border: 2px solid #00a2ff !important;
             box-shadow: none !important;
         }
         .cta-btn.solid-blue:hover {
-            background: #0a365c !important;
+            background: #0088d1 !important;
+            border-color: #0088d1 !important;
         }
         
         .cta-btn.outline-blue {
             background: transparent !important;
-            color: #0f4c81 !important;
-            border: 2px solid #0f4c81 !important;
+            color: #00a2ff !important;
+            border: 2px solid #00a2ff !important;
             box-shadow: none !important;
         }
         .cta-btn.outline-blue:hover {
-            background: #0f4c81 !important;
-            color: #ffffff !important;
+            background: #00a2ff !important;
+            color: #121721 !important;
         }
 
         /* Brand Switcher */
         .brand-switcher {
-            background: #ffffff !important;
-            border-bottom: 1px solid #e2e8f0 !important;
+            background: rgba(18, 23, 33, 0.95) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
         }
         .brand-tab {
-            color: #64748b !important;
+            color: #a1a1aa !important;
         }
         .brand-tab.active-brand {
-            color: #0f4c81 !important;
-            border-bottom-color: #0f4c81 !important;
+            color: #00a2ff !important;
+            border-bottom-color: #00a2ff !important;
         }
 
         /* Sections */
         .hero-centered {
-            background: #ffffff !important;
-            border-bottom: 1px solid #e2e8f0 !important;
+            background: transparent !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
         }
         .hero-subtitle {
-            color: #475569 !important;
+            color: #a1a1aa !important;
         }
         .hero-badge {
-            background: #e0e7ff !important;
-            color: #0f4c81 !important;
-            border: 1px solid #c7d2fe !important;
+            background: rgba(0, 162, 255, 0.1) !important;
+            color: #00a2ff !important;
+            border: 1px solid rgba(0, 162, 255, 0.2) !important;
         }
         .pulse-dot {
-            background: #0f4c81 !important;
-            box-shadow: 0 0 0 0 rgba(15, 76, 129, 0.7) !important;
+            background: #00a2ff !important;
+            box-shadow: 0 0 0 0 rgba(0, 162, 255, 0.7) !important;
         }
 
         .gradient-text-mesh {
             background: none !important;
-            -webkit-text-fill-color: #0f172a !important;
-            color: #0f172a !important;
+            -webkit-text-fill-color: #ffffff !important;
+            color: #ffffff !important;
         }
 
         .bento-section {
-            background: #F8FAFC !important;
-            color: #334155 !important;
+            background: transparent !important;
+            color: #f4f4f5 !important;
         }
         .section-title {
-            color: #0f172a !important;
+            color: #ffffff !important;
         }
 
         .bento-card, .glass-panel {
-            background: #ffffff !important;
-            border: 1px solid #e2e8f0 !important;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
-            backdrop-filter: none !important;
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+            backdrop-filter: blur(10px) !important;
         }
         .bento-card h3 {
-            color: #0f172a !important;
+            color: #ffffff !important;
         }
         .bento-card p {
-            color: #475569 !important;
+            color: #a1a1aa !important;
         }
         .bento-list li {
-            color: #334155 !important;
+            color: #f4f4f5 !important;
         }
         .bento-list ion-icon {
-            color: #0f4c81 !important;
+            color: #00a2ff !important;
         }
 
         .bento-icon-wrapper {
-            background: #f1f5f9 !important;
+            background: rgba(0, 162, 255, 0.1) !important;
         }
         .bento-icon-wrapper ion-icon {
-            color: #0f4c81 !important;
+            color: #00a2ff !important;
         }
         
         .ai-input {
-            background: #ffffff !important;
-            border: 1px solid #cbd5e1 !important;
-            color: #0f172a !important;
+            background: rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: #ffffff !important;
         }
         .ai-input::placeholder {
-            color: #94a3b8 !important;
+            color: #a1a1aa !important;
         }
         .ai-input:focus {
-            border-color: #0f4c81 !important;
-            box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.1) !important;
+            border-color: #00a2ff !important;
+            box-shadow: 0 0 0 3px rgba(0, 162, 255, 0.2) !important;
         }
 
         footer {
-            background: #0f172a !important;
+            background: #0a0a0c !important;
             border-top: none !important;
-            color: #f8fafc !important;
+            color: #f4f4f5 !important;
         }
         footer .footer-brand h3 {
             color: #ffffff !important;
         }
         footer p {
-            color: #cbd5e1 !important;
+            color: #a1a1aa !important;
         }
         footer h4 {
             color: #ffffff !important;
         }
         .footer-bottom {
-            border-top: 1px solid #334155 !important;
-            color: #94a3b8 !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+            color: #64748b !important;
         }
     </style>
 </head>
-<body style="background-color: #F8FAFC; color: #334155; font-family: 'Roboto', sans-serif;">
+<body>
 
     <!-- Brand Switcher Tabs -->
     <div class="brand-switcher">
@@ -197,7 +198,7 @@
     
     <nav id="navbar">
         <div class="logo-container">
-            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: #0f172a;">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: #ffffff;">
                 <img src="assets/logo_1.png" alt="Alma Intelligence Logo" class="logo-img" style="height: 50px; margin-right: 15px;">
                 <span class="logo-text">ALMA <span class="highlight-blue">INTELLIGENCE</span></span>
             </a>
@@ -228,7 +229,7 @@
     <section id="services" class="bento-section">
         <div class="section-header-centered" style="padding-top: 60px;">
             <h2 class="section-title">Our <span class="highlight-blue">Capabilities</span></h2>
-            <p style="color: #475569; font-size: 1.1rem;">Comprehensive solutions designed for scale.</p>
+            <p style="font-size: 1.1rem;" class="hero-subtitle">Comprehensive solutions designed for scale.</p>
         </div>
         
         <div class="bento-grid">
@@ -283,20 +284,20 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section bento-section" style="max-width: 800px; margin: 0 auto; text-align: center; padding-top: 80px; padding-bottom: 80px;">
         <h2 class="section-title">Get In <span class="highlight-blue">Touch</span></h2>
-        <p style="color: #475569; margin-bottom: 40px; font-size: 1.1rem;">Ready to transform your business? Let's talk.</p>
+        <p style="margin-bottom: 40px; font-size: 1.1rem;" class="hero-subtitle">Ready to transform your business? Let's talk.</p>
         <form id="contact-form" class="contact-form glass-panel" style="text-align: left; padding: 40px;">
             <input type="text" id="name" placeholder="Your Name" required class="ai-input">
             <input type="email" id="email" placeholder="Your Email" required class="ai-input">
             <input type="text" id="company" placeholder="Company Name" class="ai-input">
             <textarea id="message" rows="5" placeholder="How can we help you?" required class="ai-input"></textarea>
-            <button type="submit" class="cta-btn solid-blue glow-effect" style="width: 100%; border: none; justify-content: center; font-size: 1.1rem; padding: 1.2rem; cursor: pointer;">Send Message</button>
+            <button type="submit" class="cta-btn solid-blue glow-effect" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1.2rem; cursor: pointer;">Send Message</button>
             <div id="form-status" class="form-status"></div>
         </form>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-content" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
+        <div class="footer-content" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; padding: 60px 5% 40px 5%;">
             <div class="footer-brand">
                 <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
                     <img src="assets/logo_1.png" alt="Logo" style="height:40px;">
@@ -310,7 +311,7 @@
                 <p style="display: flex; align-items: center; gap: 8px;"><ion-icon name="location-outline"></ion-icon> San Juan, Puerto Rico</p>
             </div>
         </div>
-        <div class="footer-bottom" style="text-align: center; margin-top: 40px; padding-top: 20px;">
+        <div class="footer-bottom" style="text-align: center; margin-top: 20px; padding-top: 20px; padding-bottom: 20px;">
             &copy; 2026 Alma Intelligence. All rights reserved.
         </div>
     </footer>
